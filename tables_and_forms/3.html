@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ACCOUNT LOGIN</title>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet"> 
+		<style>
+			body {
+				background: #EBEBEB;
+				font-family: 'Raleway', sans-serif;
+				color: #555555;
+				font-size:  30px;
+			}
+
+			label, a {
+				font-size: 0.45em;
+			}
+
+			a {
+				text-decoration: none;
+				color: #555555;
+				font-weight: 200;
+			}
+
+			input[type="text"], input[type="password"] {
+				border-radius: 1px;
+				border: 0.5px solid #555555;
+				opacity: 0.3;
+			}
+
+			.main {
+				height: 100%;
+			}
+
+			.form_window {
+				background: white;
+				width: 25%;
+				padding: 25px 65px;
+				margin: 0 auto;
+				border-radius: 2%;
+				min-width: 300px;
+			}
+
+			#remember + label {
+				opacity: .3;
+			}
+
+			#remember:checked + label {
+			    opacity: 1;
+		    }
+
+		    .password {
+				position: relative;
+			}
+
+			#password-input{
+				width: 100%;
+				height: 35px;
+				text-indent: 10px;
+				border-radius: 3%;
+				border: 1px solid #999;
+				font-size: 18px;
+			}
+
+			.password-control {
+				position: absolute;
+				top: 13px;
+				right: 6px;
+				display: inline-block;
+				width: 15px;
+				height: 15px;
+				background: url(view.svg) 0 0 no-repeat;
+			}
+
+			.password-control.view {
+				background: url(no-view.svg) 0 0 no-repeat;
+			}
+
+			input[type="checkbox"] {
+				width: 1em;
+				opacity: 0.3;
+				border: 1px solid  #a8a8a8;
+			    line-height: 14px;
+			    text-align: center;
+			}
+
+			.sub_action {
+				margin: 0;
+				display: inline-block;
+				box-sizing: border-box;
+				width: 48%;
+				vertical-align: middle;
+			}
+
+			.sub_action label, .sub_action a {
+				position: relative;
+				top: -2px;
+			}
+
+			.sub_action:last-child {
+				text-align: right;
+			}
+
+			.form_element {
+			}
+
+			.form_element > input {
+				width: 100%;
+				height: 35px;
+			}
+
+			input[type="submit"] {
+				border-radius: 30px;
+				background: #333333;
+				color: white;
+				padding: 15px 35px;
+				border-color: #333333;
+				font-size: 0.5em;
+				font-style: bold;
+				margin-top: 15px;
+				margin-bottom: 15px;
+				width: 135px;
+				cursor: pointer;
+			}
+			.login:focus, .password input:focus {
+				opacity: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function show_hide_password(target){
+				var input = document.getElementById('password-input');
+				if (input.getAttribute('type') == 'password') {
+					target.classList.add('view');
+					input.setAttribute('type', 'text');
+				} else {
+					target.classList.remove('view');
+					input.setAttribute('type', 'password');
+				}
+				return false;
+			}
+		</script>
+
+		<div class="main">
+			<div class="form_window">
+				<form action="" method="post">
+					<p>ACCOUNT LOGIN</p>
+					<label>USERNAME</label>
+					<br>
+					<div class="form_element">
+						<input class="login" type="text">
+					</div>
+					<label>PASSWORD</label>
+					<br>
+					<div class="password form_element">
+						<input type="password" id="password-input" name="password">
+						<a href="#" class="password-control" onclick="show_hide_password(this)"></a>
+					</div>
+					<div class="form_element">
+						<div class="sub_action">
+							<input type="checkbox" name="remember" id="remember"><label for="remember">Remember me</label>
+						</div>
+						<div class="sub_action">
+							<a href="">Forgot Password?</a>
+						</div>
+					</div>
+					<div>
+						<input type="submit" value="Login">
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Таблица</title>
+		<meta charset="utf-8">
+		<style>
+			body {
+				font-size:  12px;
+			}
+			table, td, th {
+				border: solid 1px black;
+			}
+			table {
+				width: 100%;
+			}
+			th:first-child {
+				width:  40%;
+			}
+			td {
+				width:  20%;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<caption>
+				Сводная таблица с данными
+			</caption>
+			<thead>
+				<tr>
+					<th></th>
+					<th>2019</th>
+					<th>2020</th>
+					<th>2021</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Золото</td>
+					<td rowspan="2">5643</td>
+					<td>4533</td>
+					<td>7897</td>
+				</tr>
+				<tr>
+					<td>Брилианты</td>
+					<td>31234</td>
+					<td>5432</td>
+				</tr>
+				<tr>
+					<td>Валюта</td>
+					<td>43533</td>
+					<td colspan="2" style="text-align: center;">34533</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Запись на курсы программирования</title>
+		<meta charset="utf-8">
+		<meta http-equiv="Cache-Control" content="no-cache"/>
+		<style>
+			div {
+				padding-top:  15px;
+			}
+			textarea {
+				width:  200px;
+				height: 70px;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="" method="post">
+			<div>
+				<label for="name">Имя:</label>
+				<br>
+				<input type="text" value="" id="name" placeholder="Андрей" required>
+			</div>
+
+			<div>
+				<label for="p_l_java"><input type="radio" name="p_l" id="p_l_java" value="Java" checked>Java</label>
+				<label for="p_l_c"><input type="radio" name="p_l" id="p_l_c" value="C++">C++</label>
+				<label for="p_l_python"><input type="radio" name="p_l" id="p_l_python" value="Python">Python</label>
+				<label for="p_l_php"><input type="radio" name="p_l" id="p_l_php" value="PHP">PHP</label>
+				<label for="p_l_javascript"><input type="radio" name="p_l" id="p_l_javascript" value="JavaScript">JavaScript</label>
+			</div>
+
+			<div>
+				<label for="add_info">Дополнительная информация:</label>
+				<br/>
+				<textarea id="add_info" placeholder="Есть опыт программирования на Java"></textarea>
+			</div>
+
+			<div>
+				<label for="pass">Секретное слово:</label>
+				<br>
+				<input type="password" id="pass" required>
+			</div>
+			<div>
+				<label for="approval"><input type="checkbox" id="approval" required>С правилами ознакомился и согласен</label>
+			</div>
+			<div>
+				<input type="submit" value="Отправить">
+				<input type="reset" value="Очистить">
+			</div>
+		</form>
+	</body>
+</html>

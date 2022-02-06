@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cards</title>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Raleway:wght@500&display=swap" rel="stylesheet"> 
+		<style>
+			.main_window {
+				background: #EEEEEE;
+				margin: 15px;
+				display: inline-block;
+			}
+			.main_window:first-child {
+				background: white;
+				padding: 0 110px;
+			}
+
+			.card-info {
+				width: 400px;
+				height: 230px;
+				background: #DCE8EE;
+				border-radius: 8px;
+				border: solid 4px #77AABD;
+				margin: 0 auto;
+			}
+
+			.cards_block {
+				margin: 15px;
+			}
+
+			.card {
+				width: 190px;
+				height: 240px;
+				display: inline-block;
+				padding-right: 15px;
+
+			}
+
+			.card__up {
+				height: 75%;
+				text-align: center;
+				line-height: 180px;
+				font-size: 0;
+				font-family: "Arial Narrow", Arial, sans-serif;
+			}
+
+			.card__down {
+				height: 25%;
+				background: white;
+				font-family: Arial, sans-serif;
+				line-height: 60px;
+				padding-left: 10px;
+				position: relative;
+			}
+
+			.centered {
+				vertical-align: middle;
+			    display: inline-block;
+			    font-size: medium;
+			    color: white;
+			    font-size: 100px;
+			}
+			.card__down .centered {
+				margin-left: 5px;
+			}
+
+			.green {
+				background: #269F5D;
+			}
+			.blue {
+				background: #65C2DC;
+			}
+			.orange {
+				background: #EEBC40;
+			}
+			p {
+				padding: 0 15px;
+				font-family: Helvetica, Arial, sans-serif;
+				font-size: 24px;
+			}
+			.card-info__date {
+				text-align: right;
+				font-weight: 500;
+			}
+			.card-info__title {
+				font-weight: 700;
+			}
+			.card-info__content {
+
+			}
+			.refresh_pic {
+				z-index: 999;
+				font-size: 0;
+				line-height: 0;
+				top: -23px;
+				left: 120px;
+				opacity: 0;
+			}
+			img {
+				position: absolute;
+			}
+			.card:last-child {
+				padding-right: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main_window">
+			<div class="card-info">
+				<p class="card-info__date">6 Nov 2017</p>
+				<p class="card-info__title">Another title</p>
+				<p class="card-info__content">This is content of my news item. Very newsworthy.</p>
+			</div>
+		</div>
+		<br>
+		<div class="main_window">
+			<div class="cards_block">
+				<div class="card">
+					<div class="card__up green">
+						<div class="centered">3</div>
+					</div>
+					<div class="card__down">
+						<img class="refresh_pic" src="refresh.png" alt="refresh">
+						<span>Card 3</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__up blue">
+						<div class="centered">1</div>
+					</div>
+					<div class="card__down">
+						<img class="refresh_pic" src="refresh.png" alt="refresh" style="opacity: 1;">
+						Card 1
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__up orange">
+						<div class="centered">2</div>
+					</div>
+					<div class="card__down">
+						<img class="refresh_pic" src="refresh.png" alt="refresh">
+						Card 2
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
