@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Circe';
+    src: url('font/Circe-Regular.eot');
+    src: local('Circe'), local('Circe-Regular'),
+        url('font/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/Circe-Regular.woff2') format('woff2'),
+        url('font/Circe-Regular.woff') format('woff'),
+        url('font/Circe-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: "Circe";
+	font: 1.2rem/1.2 Circe, sans-serif;
+}
+
+.product_categories h2 {
+    text-align: center;
+}
+
+.all-categories {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /* width: 200px; */
+    margin: 0 auto;
+}
+
+.all-categories a {
+    text-decoration: none;
+    color: #C5D3D3;
+}
+
+.all-categories__item {
+    padding: 10px 25px;
+    background: #0D1212;
+    text-transform: uppercase;
+}
+
+.all-categories__item:hover {
+    color: #238884;
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-wrapper h2 {
+    text-align: center;
+}
+
+.category-wrapper {
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    box-sizing: border-box;
+    height: 450px;
+    width: 230px;
+    background: gray;
+    padding: 0;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.category-item a {
+    text-decoration: none;
+    color:black;
+}
+
+.category-item:first-child, .category-item:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+.category-item__preview {
+    height: 300px;
+}
+
+.category-item__preview img {
+    width: 230px;
+    height: 300px;
+}
+
+.category-item__description {
+    padding: 5px 10px;
+    height: 150px;
+}
+
+.category-item__description p {
+    text-align: center;
+}
+
+.paginator {
+    display: flex;
+    justify-content: center;
+}
+
+.paginator__item {
+    padding: 5px 10px;
+    border: 1px solid black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.paginator__item:not(:first-child) {
+    border-left: none;
+}
+
+.checked_page {
+    background: #9a9b9b;
+}
+
+.category-title {
+    text-align: center;
+}
+
+.not_found {
+    font-size: 24px;
+}
