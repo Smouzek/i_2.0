@@ -1,6 +1,6 @@
 <?php
 //работа с БД
-include('../include/dbConnect.php');
+include('./include/dbConnect.php');
 class RecordsWork
 {
     public function checkDBRecord($table_name = "", $id = 0) {

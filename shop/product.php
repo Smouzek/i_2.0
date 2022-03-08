@@ -1,7 +1,7 @@
 <?php
 
-require_once('../include/header.php');
-require_once('../class/RecordsWork.php');
+require_once('./include/header.php');
+require_once('./class/RecordsWork.php');
 
 $product_id = $_GET['id'] + 0;
 $category_id = $_GET['category_id'] + 0;

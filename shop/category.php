@@ -1,7 +1,7 @@
 <?php
 
-require_once('../include/header.php');
-require_once('../class/RecordsWork.php');
+require_once('./include/header.php');
+require_once('./class/RecordsWork.php');
 
 $category_id = $_GET['id'] + 0;
 $error_message = "";
